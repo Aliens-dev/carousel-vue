@@ -1,6 +1,6 @@
 <template>
     <div class="app">
-        <carousel class="carousel" >
+        <carousel >
             <carousel-slide v-for="slide in slides" :key="slide" class="carousel-slider">
                 <img :src="slide" :alt="slide">
             </carousel-slide>
@@ -26,6 +26,7 @@ export default {
             ]
         }
     },
+
     components : {
         Carousel : Carousel,
         CarouselSlide : CarouselSlide,
@@ -37,13 +38,13 @@ export default {
     .app {
         display:flex;
         justify-content: center;
-        
     }
     .carousel {
         position:relative;
         overflow: hidden;
         width:800px;
         height:500px;
+        z-index:10;
     }
     .btn {
         padding:5px 10px;
@@ -72,7 +73,6 @@ export default {
         left:0;
     }
     .carousel-slider {
-        z-index:1;
         position:absolute;
         top:0;
         left:0;

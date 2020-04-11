@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="carousel"  @keydown="checkSlide($event)" tabindex="0">
         <slot></slot>
         <button @click.prevent="next" class="btn btn-next"><i class="fa fa-angle-right"></i></button>
         <button @click.prevent="prev" class="btn btn-prev"><i class="fa fa-angle-left"></i></button>
@@ -39,6 +39,15 @@ export default {
                 this.index = this.slidesLength - 1;
             }
              this.slideDirection = 'slide-left';
+        },
+        checkSlide(event){
+            if(event.keyCode === 39){
+                this.next();
+            }else if (event.keyCode === 37){
+                this.prev();
+            }else {
+                return;
+            }
         },
     }
 }
