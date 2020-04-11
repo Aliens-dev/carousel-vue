@@ -1,24 +1,2 @@
-# carousel-tp
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# carousel
+!['carousel'](https://media1.tenor.com/images/fc63e9f7709c6d496f8f9e01b3a839c7/tenor.gif)
